@@ -7,7 +7,12 @@ authors = [
     { name = "Michael Barlow", email = "m.barlow12@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "paddleocr[all]>=3.7.0",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+    "transformers[torch]>=5.22.0",
+]
 
 [project.scripts]
 ochre = "ochre:main"
