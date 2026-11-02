@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "paddleocr[all]>=3.7.0",
+    "paddlepaddle>=3.3.1",
     "torch>=2.15.0",
     "torchvision>=0.29.2",
     "transformers[torch]>=5.22.0",
