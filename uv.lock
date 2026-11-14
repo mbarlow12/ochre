@@ -1950,8 +1950,11 @@ name = "ochre"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "numpy" },
+    { name = "opencv-contrib-python" },
     { name = "paddleocr", extra = ["all"] },
     { name = "paddlepaddle" },
+    { name = "pillow" },
     { name = "torch" },
     { name = "torchvision" },
     { name = "transformers", extra = ["torch"] },
@@ -1959,8 +1962,11 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "numpy", specifier = ">=2.3.5" },
+    { name = "opencv-contrib-python", specifier = ">=4.10.0.84" },
     { name = "paddleocr", extras = ["all"], specifier = ">=3.7.0" },
     { name = "paddlepaddle", specifier = ">=3.3.1" },
+    { name = "pillow", specifier = ">=13.0.0" },
     { name = "torch", specifier = ">=2.15.0" },
     { name = "torchvision", specifier = ">=0.29.2" },
     { name = "transformers", extras = ["torch"], specifier = ">=5.22.0" },
